@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name = 'django-redirecturls',
     packages = ['shorturls'],
-    version = '1.1a',
+    version = '1.1',
     description = 'URL redirection',
     author='Alexander Nordlund',
     author_email='deep.alexander@gmail.com',
