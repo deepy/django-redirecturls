@@ -1,5 +1,8 @@
-from django.conf.urls.defaults import *
+from django.urls import path
 
-urlpatterns = patterns('',
-    (r'^(?P<shortname>\w+)', 'shorturls.views.index'),
-)
+from . import views
+
+urlpatterns = [
+    path(r'<slug:shortname>', views.index, name='index'),
+]
+
